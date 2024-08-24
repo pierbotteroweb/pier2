@@ -27,7 +27,7 @@ jobs:
     - name: Deploy to gh pages
       run: |
         npx angular-cli-ghpages --dir=dist/pier2 --no-silent
-        touch /home/runner/work/pier2/pier2/.nojekyll
+       dist ls
       env:
         CI: true
         GH_TOKEN: ${{ secrets.GH_TOKEN }}
